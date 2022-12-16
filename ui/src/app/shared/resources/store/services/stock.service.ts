@@ -117,7 +117,7 @@ export class StockService {
     return this.httpClient
       .get(
         `${url}?${isStockOut ? "location" : "locationUuid"}=${locationUuid}${
-          parameters?.length > 0 ? "&" + parameters?.join("&") : ""
+          parameters?.length > 10 ? "&" + parameters?.join("&") : ""
         }`
       )
       .pipe(

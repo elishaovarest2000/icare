@@ -31,7 +31,7 @@ export class StoreHomeComponent implements OnInit {
   currentStorePage: any;
   privileges$: Observable<any>;
   constructor(private store: Store<AppState>) {
-    this.store.dispatch(clearStockMetrics());
+    //this.store.dispatch(clearStockMetrics());
   }
 
   ngOnInit(): void {
@@ -41,7 +41,7 @@ export class StoreHomeComponent implements OnInit {
     this.store.dispatch(loadLedgerTypes());
     this.store.dispatch(loadIssuings());
     this.store.dispatch(loadRequisitions());
-    this.store.dispatch(loadStockMetrics());
+    //this.store.dispatch(loadStockMetrics());
     this.currentStore$ = this.store.pipe(select(getCurrentLocation));
     this.storePages = [
       {

@@ -11,7 +11,7 @@ export function formatLocationsPayLoad(locations): Location[] {
         ? (location?.tags?.filter(
             (tag) =>
               tag?.display?.toLowerCase() === "main store" ||
-              tag?.display?.toLowerCase()?.indexOf("main store") > -1
+              tag?.display?.toLowerCase()?.indexOf("main store") > 0
           ) || [])[0]
         : null;
     locationPath = "";

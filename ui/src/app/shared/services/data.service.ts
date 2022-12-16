@@ -13,7 +13,7 @@ export class DataService {
   constructor(private httpClient: HttpClient) {}
 
   // openmrs/ws/rest/v1/visit?includeInactive=true&patient=17454676-46fb-4b68-a88c-b960d977d625&v=custom:(uuid,visitType,startDatetime,stopDatetime,location,encounters:(uuid))
-  // get constant from global variable: openmrs/ws/rest/v1/bahmnicore/sql/globalproperty?property=bahmni.pharmacy.daysLeftToExpiryAlert
+  // get constant from global variable: openmrs/ws/rest/v1/bahmnicore/sql/globalproperty?property=bahmni..daysLeftToExpiryAlert
   getVisitDetailsForCurrentPatient(patientId) {}
 
   getBasicDetailFrom() {}

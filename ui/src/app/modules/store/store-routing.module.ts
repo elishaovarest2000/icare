@@ -16,7 +16,7 @@ const routes: Routes = [
     children: [
       {
         path: "",
-        redirectTo: "stock",
+        redirectTo: "issuing",
         pathMatch: "full",
       },
       {
@@ -51,8 +51,14 @@ const routes: Routes = [
   },
 ];
 
+
+
+
+
+
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class StoreRoutingModule {}
+// export const StoreRoutingModule = [ ]

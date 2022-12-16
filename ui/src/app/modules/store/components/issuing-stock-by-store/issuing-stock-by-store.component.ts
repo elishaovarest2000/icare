@@ -9,7 +9,7 @@ import * as _ from "lodash"
 })
 export class IssuingStockByStoreComponent implements OnInit {
   @Input() issuingStock: any;
-  @Input() currentStore: any;
+  @Input() : any;
 
   @Output() rejectRequest: EventEmitter<any> = new EventEmitter();
   @Output() issueRequest: EventEmitter<any> = new EventEmitter();

@@ -22,8 +22,8 @@
         </mat-select>
       </mat-form-field>
     </div>
-
-    <!-- <div style="height: 60vh; overflow: auto">
+    <!--commented-->
+    <div style="height: 60vh; overflow: auto">
       <table class="table">
         <tr>
           <td>#</td>
@@ -31,9 +31,9 @@
           <td>Quantity Requested</td>
           <td>Quantity Issued</td>
           <td>Requesting Store</td>
-          <td>Status</td> -->
-          <!-- <td>Requester's Status</td> -->
-          <!-- <td>Requested Date</td>
+          <td>Status</td> 
+          <td>Requester's Status</td> 
+          <td>Requested Date</td>
           <td>Actions</td>
         </tr>
 
@@ -59,11 +59,11 @@
           <td>{{ issue?.requestingLocation?.name }}</td>
           <td>
             <span class="text-warning">{{ issue?.status }}</span>
-          </td> -->
-          <!-- <td>
+          </td> 
+        <td>
             <div class="text-warning">Waiting</div>
-          </td> -->
-          <!-- <td>
+          </td> 
+          <td>
             {{ issue?.requestDate | date: "medium" }}
           </td>
           <td>
@@ -120,7 +120,8 @@
           </td>
         </tr>
       </table>
-    </div> -->
+    </div> 
+    <!--commented-->
     <div *ngIf="!params?.issuingList || !params?.currentStore">
       <mat-progress-bar mode="indeterminate"></mat-progress-bar>
     </div>
